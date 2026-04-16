@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card - Alexander</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <article class="profile-card" data-testid="test-profile-card">
+        
+        <!-- Header -->
+        <header class="card-header">
+            <figure class="avatar-container">
+                <img 
+                    src="https://picsum.photos/id/64/300/300" 
+                    alt="Alexander - a friendly software developer with glasses and a warm smile"
+                    class="avatar"
+                    data-testid="test-user-avatar"
+                >
+            </figure>
+            <h1 class="user-name" data-testid="test-user-name">Alexander</h1>
+        </header>
+
+        <!-- Main Content -->
+        <div class="card-body">
+            
+            <!-- Biography -->
+            <p class="bio" data-testid="test-user-bio">
+                Passionate frontend developer from Ibadan, Nigeria. I love building beautiful, accessible, 
+                and performant user interfaces with modern web technologies. When I'm not coding, you'll find me 
+                exploring new design trends or enjoying a good cup of Nigerian coffee.
+            </p>
+
+            <!-- Current Time -->
+            <div class="time" data-testid="test-user-time" id="current-time">
+                Loading time...
+            </div>
+
+            <div class="content-grid">
+
+                <!-- Social Links -->
+                <div class="social-section">
+                    <div class="section-title">Connect with me</div>
+                    <nav class="social-links" data-testid="test-user-social-links" aria-label="Social media links">
+                        <a href="https://twitter.com" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           data-testid="test-user-social-twitter"
+                           class="social-link">
+                            𝕏 Twitter
+                        </a>
+                        <a href="https://linkedin.com" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           data-testid="test-user-social-linkedin"
+                           class="social-link">
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           data-testid="test-user-social-github"
+                           class="social-link">
+                            GitHub
+                        </a>
+                    </nav>
+                </div>
+
+                <!-- Hobbies & Dislikes -->
+                <div class="lists-container">
+                    
+                    <!-- Hobbies -->
+                    <section class="list-section">
+                        <div class="section-title">Hobbies</div>
+                        <ul class="hobbies-list" data-testid="test-user-hobbies">
+                            <li>Coding beautiful UIs</li>
+                            <li>Playing football</li>
+                            <li>Reading tech books</li>
+                            <li>Listening to Afrobeats</li>
+                            <li>Photography</li>
+                        </ul>
+                    </section>
+
+                    <!-- Dislikes -->
+                    <section class="list-section">
+                        <div class="section-title">Dislikes</div>
+                        <ul class="dislikes-list" data-testid="test-user-dislikes">
+                            <li>Bugs in production</li>
+                            <li>Poor accessibility</li>
+                            <li>Long loading times</li>
+                            <li>Unresponsive designs</li>
+                            <li>Overcomplicated code</li>
+                        </ul>
+                    </section>
+
+                </div>
+
+            </div>
+        </div>
+    </article>
+
+    <script src="script.js"></script>
+</body>
+</html>
