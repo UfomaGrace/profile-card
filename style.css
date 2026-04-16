@@ -1,0 +1,208 @@
+:root {
+    --primary: #2563eb;
+    --bg: #f8fafc;
+    --card-bg: #ffffff;
+    --text: #1e2937;
+    --text-light: #64748b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.profile-card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    max-width: 520px;
+    width: 100%;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-4px);
+}
+
+/* Header */
+.card-header {
+    background: linear-gradient(135deg, #3b82f6, #1e40af);
+    color: white;
+    padding: 32px 28px 24px;
+    text-align: center;
+}
+
+.avatar-container {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    border: 6px solid white;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-name {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+/* Body */
+.card-body {
+    padding: 28px;
+}
+
+.bio {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--text-light);
+    margin-bottom: 28px;
+}
+
+.time {
+    font-family: monospace;
+    font-size: 1rem;
+    color: #64748b;
+    background: #f1f5f9;
+    padding: 8px 12px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 28px;
+    font-weight: 500;
+}
+
+/* Layout */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+}
+
+@media (min-width: 640px) {
+    .content-grid {
+        grid-template-columns: 140px 1fr;
+        gap: 40px;
+    }
+}
+
+.social-section {
+    margin-bottom: 28px;
+}
+
+.section-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #475569;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    background: #f8fafc;
+    border: 2px solid #e2e8f0;
+    border-radius: 9999px;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.social-link:hover {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+    transform: translateY(-2px);
+}
+
+/* Lists */
+.lists-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+@media (min-width: 640px) {
+    .lists-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.list-section {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.hobbies-list, .dislikes-list {
+    list-style: none;
+}
+
+.hobbies-list li, .dislikes-list li {
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #334155;
+}
+
+.hobbies-list li::before {
+    content: "✓";
+    color: #22c55e;
+    font-weight: bold;
+}
+
+.dislikes-list li::before {
+    content: "✕";
+    color: #ef4444;
+    font-weight: bold;
+}
+
+/* Accessibility - Focus styles */
+a:focus, button:focus {
+    outline: 3px solid #2563eb;
+    outline-offset: 4px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+    .profile-card {
+        border-radius: 12px;
+    }
+    .card-header {
+        padding: 28px 20px 20px;
+    }
+    .card-body {
+        padding: 24px 20px;
+    }
+}
