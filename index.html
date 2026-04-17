@@ -3,98 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Card - Alexander</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Ufoma Grace | Profile Card</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <article class="profile-card" data-testid="test-profile-card">
-        
-        <!-- Header -->
+
+        <!-- Hero Header -->
         <header class="card-header">
-            <figure class="avatar-container">
-                <img 
-                    src="https://picsum.photos/id/64/300/300" 
-                    alt="Alexander - a friendly software developer with glasses and a warm smile"
-                    class="avatar"
-                    data-testid="test-user-avatar"
-                >
-            </figure>
-            <h1 class="user-name" data-testid="test-user-name">Alexander</h1>
+            <img 
+                src="https://picsum.photos/id/1015/800/400" 
+                alt="Modern residential building in a beautiful neighborhood"
+                class="header-image"
+            >
+            
+            <!-- Overlapping Avatar -->
+            <div class="avatar-wrapper">
+                <figure class="avatar-container">
+                    <img 
+                        src="https://picsum.photos/id/64/300/300" 
+                        alt="Ufoma Grace, a frontend developer from Lagos, Nigeria"
+                        class="avatar"
+                        data-testid="test-user-avatar"
+                    >
+                </figure>
+                <span class="availability-badge">
+                    <span class="dot"></span> Available
+                </span>
+            </div>
         </header>
 
         <!-- Main Content -->
         <div class="card-body">
-            
+            <h1 class="user-name" data-testid="test-user-name">Ufoma Grace</h1>
+            <p class="user-title">Frontend Developer</p>
+
             <!-- Biography -->
             <p class="bio" data-testid="test-user-bio">
-                Passionate frontend developer from Ibadan, Nigeria. I love building beautiful, accessible, 
-                and performant user interfaces with modern web technologies. When I'm not coding, you'll find me 
-                exploring new design trends or enjoying a good cup of Nigerian coffee.
+                Passionate frontend developer from Lagos, Nigeria. I create accessible, 
+                responsive and beautiful web experiences. Always learning and building 
+                with modern technologies.
             </p>
 
             <!-- Current Time -->
-            <div class="time" data-testid="test-user-time" id="current-time">
-                Loading time...
+            <div class="time" data-testid="test-user-time" id="current-time" aria-live="polite">
+                Loading...
             </div>
 
             <div class="content-grid">
 
                 <!-- Social Links -->
                 <div class="social-section">
-                    <div class="section-title">Connect with me</div>
+                    <h2 class="section-title">Connect with me</h2>
                     <nav class="social-links" data-testid="test-user-social-links" aria-label="Social media links">
                         <a href="https://twitter.com" 
                            target="_blank" 
                            rel="noopener noreferrer"
                            data-testid="test-user-social-twitter"
-                           class="social-link">
-                            𝕏 Twitter
-                        </a>
+                           class="social-link">𝕏 Twitter</a>
                         <a href="https://linkedin.com" 
                            target="_blank" 
                            rel="noopener noreferrer"
                            data-testid="test-user-social-linkedin"
-                           class="social-link">
-                            LinkedIn
-                        </a>
+                           class="social-link">LinkedIn</a>
                         <a href="https://github.com" 
                            target="_blank" 
                            rel="noopener noreferrer"
                            data-testid="test-user-social-github"
-                           class="social-link">
-                            GitHub
-                        </a>
+                           class="social-link">GitHub</a>
                     </nav>
                 </div>
 
                 <!-- Hobbies & Dislikes -->
                 <div class="lists-container">
-                    
-                    <!-- Hobbies -->
                     <section class="list-section">
-                        <div class="section-title">Hobbies</div>
+                        <h2 class="section-title">Hobbies</h2>
                         <ul class="hobbies-list" data-testid="test-user-hobbies">
-                            <li>Coding beautiful UIs</li>
-                            <li>Playing football</li>
-                            <li>Reading tech books</li>
-                            <li>Listening to Afrobeats</li>
-                            <li>Photography</li>
+                            <li>Coding web projects</li>
+                            <li>Learning new skills</li>
+                            <li>Watching movies</li>
+                            <li>Listening to music</li>
+                            <li>Reading fiction</li>
                         </ul>
                     </section>
 
-                    <!-- Dislikes -->
                     <section class="list-section">
-                        <div class="section-title">Dislikes</div>
+                        <h2 class="section-title">Dislikes</h2>
                         <ul class="dislikes-list" data-testid="test-user-dislikes">
                             <li>Bugs in production</li>
                             <li>Poor accessibility</li>
-                            <li>Long loading times</li>
-                            <li>Unresponsive designs</li>
-                            <li>Overcomplicated code</li>
+                            <li>Poor communication</li>
+                            <li>Disorganization</li>
+                            <li>Procrastination</li>
                         </ul>
                     </section>
-
                 </div>
 
             </div>
